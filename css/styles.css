@@ -1,0 +1,113 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  color: #626262;
+  font-size: 14px;
+  line-height: 24px;
+}
+.container {
+  width: 901px;
+  margin: 0 auto;
+}
+header {
+  padding: 84px 0;
+}
+.main-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.main-menu li {
+  display: inline-block;
+}
+.main-menu li:not(:last-child) {
+  margin-right: 110px;
+}
+.main-menu a {
+  color: #626262;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+}
+.main-menu a:hover,
+.main-menu a:focus {
+  color: #03a9f4;
+}
+
+/*MAIN CONTENT*/
+main {
+  padding-bottom: 70px;
+  font-size: 0;
+}
+article {
+  width: 420px;
+  display: inline-block;
+}
+article:nth-of-type(odd) {
+  margin-right: 61px;
+}
+article:not(:nth-last-of-type(-n + 2)) {
+  margin-bottom: 136px;
+}
+article:nth-last-of-type(-n + 2) {
+  margin-bottom: 54px;
+}
+img {
+  margin-bottom: 30px;
+}
+.name-item-menu {
+  margin: 0 0 32px 0;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+h3 {
+  margin: 0 0 36px 0;
+  font-size: 30px;
+  line-height: 36px;
+}
+p {
+  margin: 0;
+  font-size: 14px;
+}
+button {
+  margin: 0 auto;
+  padding: 0;
+  border: 1px solid;
+  width: 164px;
+  height: 60px;
+  background: none;
+  color: #626262;
+  font-size: 20px;
+  line-height: 24px;
+  display: block;
+}
+
+.visually-hidden:not(:focus):not(active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
