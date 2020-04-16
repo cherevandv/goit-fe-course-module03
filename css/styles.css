@@ -18,7 +18,7 @@ body {
   margin: 0 auto;
 }
 header {
-  padding: 84px 0;
+  padding: 72px 0 96px 0;
 }
 .main-menu {
   list-style: none;
@@ -43,7 +43,6 @@ header {
   color: #03a9f4;
 }
 
-/*MAIN CONTENT*/
 main {
   padding-bottom: 70px;
   font-size: 0;
@@ -65,15 +64,16 @@ img {
   margin-bottom: 30px;
 }
 .name-item-menu {
-  margin: 0 0 32px 0;
+  margin: 0 0 24px 0;
   font-family: "Ubuntu", sans-serif;
   font-size: 14px;
   line-height: 17px;
+  color: #b4ad9e;
   text-transform: uppercase;
   font-weight: 300;
 }
 h3 {
-  margin: 0 0 36px 0;
+  margin: 0 0 32px 0;
   font-size: 30px;
   line-height: 36px;
 }
@@ -92,22 +92,4 @@ button {
   font-size: 20px;
   line-height: 24px;
   display: block;
-}
-
-.visually-hidden:not(:focus):not(active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
